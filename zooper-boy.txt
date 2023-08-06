@@ -1,0 +1,14 @@
+import RP1.GPIO as GPIO 
+from time import sleep 
+GPIO.setmode(GPIO.BCH)
+GPIO.setup(4, GPIO.IN)
+try:
+     while True:
+              if GPIO. input (4):  
+                          print("I'm reading TRUE on GPIO 4")
+              else:
+                           print("I'm reading FALSE on GPIO 4")
+              sleep(1)
+finally:
+      print("Cleaning up...")
+      GOING. cleanup()
